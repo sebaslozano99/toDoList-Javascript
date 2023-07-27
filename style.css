@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+}
+
+.aside{
+    padding: 1em;
+    /* border: 1px solid red; */
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #e4e4e4;
+}
+
+.guy-photo{
+    border-radius: 50%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.menu{
+    /* border: 1px solid red; */
+    margin-top: 2em;
+    height: 9em;
+}
+
+.menu ul{
+    /* border: 1px solid purple; */
+    list-style: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu ul li{
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+
+
+/* RIGHT-SIDE CONTAINER */
+
+.container{
+    /* border: 3px solid purple; */
+    width: 75%;
+    height: 100%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.input-container{
+    /* border: 1px solid red; */
+    width: 24em;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+.input-container input{
+    width: 70%;
+    padding: 8px;
+    outline: none;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 7px #b5b3b3;
+}
+
+
+
+.listContainer{
+    width: 100%;
+    height: 90%;
+    padding: 1em;
+}
+
+#submit{
+    background-color: #007BFF;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 15px;
+    box-shadow: 2px 2px 7px #007BFF;
+    cursor: pointer;
+}
+#submit:active{
+    transform: translateY(-2px);
+}
+
+.listContainer{
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 20px;
+}
+
+
+.listContainer li{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    /* width: 30em; */
+    margin: 20px 0;
+    border-radius: 15px;
+    transition: all ease-in-out .3s;
+    cursor: pointer;
+}
+
+.listContainer li:hover{
+    box-shadow: 2px 2px 6px #b5b3b3;
+    transform: scale(1.01);
+}
+
+.listContainer li img{
+    width: 24px;
+    height: 24px;
+}
+
+.listContainer li p{
+    user-select: none;
+}
+
+.listContainer li p.checked{
+    text-decoration: line-through;
+    color: red;
+}
+
+.listContainer img:hover{
+    transform: translateY(-2px);
+}
